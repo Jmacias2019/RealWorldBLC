@@ -5,16 +5,18 @@ public class Student {
 	private String gender;
 	private int classYr;
 	private int age;
+	private String grade;
 	
 	
 	/* Data members above, methods below */
 	
 	// Right now a "full data" constructor only
-	public Student(String newName, String newGender, int newClassYr, int newAge) {
+	public Student(String newName, String newGender, int newClassYr, int newAge, String newGrade) {
 		name = newName;
 		gender = newGender;
 		classYr = newClassYr;
 		age = newAge;
+		grade = newGrade;
 	}
 
 	
@@ -45,6 +47,11 @@ public class Student {
 	}
 	public int getClassYr() {
 		return classYr;
+	}
+	
+	// here is where I added grades
+	public void setGrade(String newGrade) {
+		grade = newgrade;
 	}
 	
 	public String toString() {

@@ -17,7 +17,11 @@ public class StudentDriver {
 		cmp112.setStudent(nextStudent, studentCount++);
 		nextStudent = new Student("Christine Black", "F", 1, 20);
 		cmp112.setStudent(nextStudent, studentCount++);
-		// Add YOURSELF!!!
+		// Here is where I added the names of a character from a game. Then I added my name
+		cmp112.setStudent(nextStudent, (studentCount++));
+		nextStudent = new Student("Sarah Kerrigan", "F", 4, 27);
+		cmp112.setStudent(nextStudent, (studentCount++));
+		nextStudent = new Student("Jacqueline Macias", "F", 1, 19);
 		System.out.println(cmp112.toString()); 
 
 	}

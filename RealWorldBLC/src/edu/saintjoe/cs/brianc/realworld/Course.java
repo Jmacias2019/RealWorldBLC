@@ -14,15 +14,19 @@ public class Course {
 	private String teacher;
 	private Student[] students;
 	private String room;
+	// Added a new String
+	private String grades; 
 	
 	/* Data members above, methods below */
 	
 	// This is a String, String, int, int constuctor
-	public Course (String newTitle, String newTeacher, String newRoom) {
+	public Course (String newTitle, String newTeacher, String newRoom, String newgrade) {
 		students = new Student[MAXSTUDENTS];
 		title = newTitle;
 		teacher = newTeacher;
 		room = newRoom;
+		// Keep track of grades
+		grade = newgrade;
 	}
 	
 	// This is a two-string constructor
